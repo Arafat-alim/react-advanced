@@ -1,13 +1,13 @@
 import React from "react";
 
-import Counter from "./hooks/Counter";
+import TitleDoc from "./hooks/TitleDoc";
 
 // import NewHOC from "./hoc/Movie";
 
 function App() {
   return (
     <div>
-      <Counter />
+      <TitleDoc />
     </div>
   );
 }
