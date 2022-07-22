@@ -1,13 +1,13 @@
 import React from "react";
 
-import TitleDoc from "./hooks/TitleDoc";
+import Users from "./hooks/Users";
 
 // import NewHOC from "./hoc/Movie";
 
 function App() {
   return (
     <div>
-      <TitleDoc />
+      <Users />
     </div>
   );
 }
