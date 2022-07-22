@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { renderIntoDocument } from "react-dom/test-utils";
+import useDocumentTitle from "./useDocumentTitle";
 
 function TitleDoc() {
   //! state
@@ -9,13 +10,17 @@ function TitleDoc() {
   //! ComponentDidUpdate
   //! ComponentWillUnMount - Clean up code
   //! Mounting and Updating Phase
-  useEffect(() => {
-    document.title = `${name} has ${count} clicked`;
+  //   useEffect(() => {
+  //     document.title = `${name} has ${count} clicked`;
 
-    return () => {
-      console.log("Clean Up COde");
-    };
-  }, [count]);
+  //     return () => {
+  //       console.log("Clean Up COde");
+  //     };
+  //   }, [count]);
+
+  // ! calling a custom hook
+  useDocumentTitle(`${name} has ${count} clicked!`);
+
   return (
     <div>
       <h1>Using useEffect Hooks</h1>
