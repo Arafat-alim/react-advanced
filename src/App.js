@@ -1,11 +1,13 @@
 import React from "react";
-import Movie from "./hoc/Movie";
+
+import Counter from "./hooks/Counter";
+
 // import NewHOC from "./hoc/Movie";
 
 function App() {
   return (
     <div>
-      <Movie id={1} />
+      <Counter />
     </div>
   );
 }
