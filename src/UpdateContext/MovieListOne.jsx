@@ -9,7 +9,9 @@ export default class MovieListOne extends Component {
       <UserContext.Consumer>
         {(userContext) => (
           <div>
-            MovieList {userContext.name} <MovieRowOne />
+            Movie List -
+            {userContext.currentUser ? userContext.currentUser.name : ""}
+            <MovieRowOne />
           </div>
         )}
       </UserContext.Consumer>
