@@ -1,9 +1,10 @@
 import React from "react";
+import App from "./render-props/challenge/App";
 // import Favourite from "./hoc/Toggler-Question/Favourite";
 // import Menu from "./hoc/Toggler-Question/Menu";
 // import ApplicationOne from "./render-props/ApplicationOne";
-import FavouriteOne from "./render-props/toggle-qusetion/FavouriteOne";
-import MenuOne from "./render-props/toggle-qusetion/MenuOne";
+// import FavouriteOne from "./render-props/toggle-qusetion/FavouriteOne";
+// import MenuOne from "./render-props/toggle-qusetion/MenuOne";
 // // import { withFavouriteNumber } from "./hoc/withFavouriteNumber";
 // import { withMyName } from "./hoc/withMyName";
 
@@ -20,9 +21,11 @@ const Application = (props) => {
 
       {/* Render Props */}
       {/* <ApplicationOne /> */}
-      <FavouriteOne />
+      {/* <FavouriteOne />
       <hr />
-      <MenuOne />
+      <MenuOne /> */}
+      {/* render Props challnegt */}
+      <App />
     </div>
   );
 };
